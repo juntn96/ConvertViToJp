@@ -4,7 +4,8 @@ import SpecialEnd
 
 def main():
     while True:
-        word = raw_input("Enter word: ")
+        word = raw_input("Enter 1 word: ")
+        word = word.lower()
         consonant = ConsonantUtils.get_consonant(word)
         part_one_vi = consonant["vi"]
         part_one_jp = consonant["jp"]
